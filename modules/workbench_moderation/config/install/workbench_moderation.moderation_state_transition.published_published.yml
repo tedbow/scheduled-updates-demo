@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.published
+id: published_published
+label: 'Published » Published'
+stateFrom: published
+stateTo: published

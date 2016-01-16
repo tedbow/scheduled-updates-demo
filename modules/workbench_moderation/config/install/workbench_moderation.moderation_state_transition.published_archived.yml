@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.archived
+    - workbench_moderation.moderation_state.published
+id: published_archived
+label: 'Published » Archived'
+stateFrom: published
+stateTo: archived

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.needs_review
+id: needs_review_needs_review
+label: 'Needs review » Needs review'
+stateFrom: needs_review
+stateTo: needs_review
