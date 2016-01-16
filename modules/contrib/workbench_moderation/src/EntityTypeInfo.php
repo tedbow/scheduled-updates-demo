@@ -289,7 +289,7 @@ class EntityTypeInfo {
       $this->entityTypeManager->getHandler($entity->getEntityTypeId(), 'moderation')->enforceRevisionsEntityFormAlter($form, $form_state, $form_id);
 
       // Submit handler to redirect to the
-      $form['actions']['submit']['#submit'][] = [$this, 'bundleFormRedirect'];
+      #$form['actions']['submit']['#submit'][] = [$this, 'bundleFormRedirect'];
     }
   }
 
