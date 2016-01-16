@@ -1,0 +1,14 @@
+services:
+  scheduled_updates.update_runner:
+    class: \Drupal\scheduled_updates\UpdateRunnerUtils
+    arguments: ['@entity_field.manager', '@entity_type.bundle.info', '@plugin.manager.scheduled_updates.update_runner', '@scheduled_updates.type_info', '@config.factory']
+  plugin.manager.scheduled_updates.update_runner:
+    class: Drupal\scheduled_updates\Plugin\UpdateRunnerManager
+    parent: default_plugin_manager
+  scheduled_updates.field_manager:
+    class: \Drupal\scheduled_updates\FieldManager
+    arguments: ['@entity_field.manager', '@config.factory']
+  scheduled_updates.type_info:
+    class: \Drupal\scheduled_updates\UpdateUtils
+    arguments: ['@entity_field.manager', '@entity_type.manager']
+#rename scheduled_updates.type_info service or class
