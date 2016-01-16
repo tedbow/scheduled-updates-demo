@@ -1,0 +1,21 @@
+uuid: 6a8aef3e-b5b9-40fd-b600-cf53caab662f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.scheduled_update.field_status
+    - scheduled_updates.scheduled_update_type.publish_on_off
+id: scheduled_update.publish_on_off.field_status
+field_name: field_status
+entity_type: scheduled_update
+bundle: publish_on_off
+label: 'Publishing status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

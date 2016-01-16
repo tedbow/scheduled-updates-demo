@@ -1,0 +1,21 @@
+uuid: 90d8c9fc-1aaa-4472-9b00-a48ef7957dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.scheduled_update.field_promote
+    - scheduled_updates.scheduled_update_type.promoted
+id: scheduled_update.promoted.field_promote
+field_name: field_promote
+entity_type: scheduled_update
+bundle: promoted
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

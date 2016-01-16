@@ -1,0 +1,17 @@
+uuid: 3d219cc0-ce56-461e-bf04-4c03fcf8d824
+langcode: en
+status: true
+dependencies: {  }
+id: promoted
+label: Promoted
+update_entity_type: node
+update_types_supported:
+  - embedded
+field_map:
+  field_promote: promote
+update_runner:
+  id: default_embedded
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: BUNDLE_DEFAULT
+  update_user: USER_UPDATE_RUNNER

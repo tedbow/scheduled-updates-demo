@@ -1,0 +1,74 @@
+uuid: 7e5f17a7-5788-4f5a-900a-1003fefa8f1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.content_schedule_updates.body
+    - field.field.node.content_schedule_updates.field_updates
+    - node.type.content_schedule_updates
+  module:
+    - inline_entity_form
+    - path
+    - text
+id: node.content_schedule_updates.default
+targetEntityType: node
+bundle: content_schedule_updates
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_updates:
+    weight: 32
+    settings:
+      override_labels: true
+      label_singular: Update
+      label_plural: Updates
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,12 @@
+uuid: 189ef7c3-0e0f-4771-a300-b169fcecb0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+_core:
+  default_config_hash: 33Fm79XNOINAgWOSzXs3KD3UzIKhNK6takh1NWTnjCc
+id: draft_draft
+label: 'Draft » Draft'
+stateFrom: draft
+stateTo: draft

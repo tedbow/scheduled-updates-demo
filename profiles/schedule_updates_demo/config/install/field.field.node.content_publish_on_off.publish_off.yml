@@ -1,0 +1,26 @@
+uuid: a2917447-3684-4ef5-8f00-f7fc9f18246f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.publish_off
+    - node.type.content_publish_on_off
+    - scheduled_updates.scheduled_update_type.publish_off
+id: node.content_publish_on_off.publish_off
+field_name: publish_off
+entity_type: node
+bundle: content_publish_on_off
+label: 'UnPublish Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:scheduled_update'
+  handler_settings:
+    target_bundles:
+      publish_off: publish_off
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 309b7d9b-6869-4265-a207-7b344ff58f53
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.moderated_content_on_off.body
+    - node.type.moderated_content_on_off
+  module:
+    - text
+    - user
+id: node.moderated_content_on_off.teaser
+targetEntityType: node
+bundle: moderated_content_on_off
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

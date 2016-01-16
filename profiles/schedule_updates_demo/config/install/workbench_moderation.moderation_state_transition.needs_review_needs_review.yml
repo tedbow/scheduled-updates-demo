@@ -1,0 +1,12 @@
+uuid: bf06c6bf-e92a-46a0-bd00-d9882e62508b
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.needs_review
+_core:
+  default_config_hash: ZeZVpDV9NRzV_jRHTSkPcibx7zrZMCWqNfExJqhnNWc
+id: needs_review_needs_review
+label: 'Needs review » Needs review'
+stateFrom: needs_review
+stateTo: needs_review

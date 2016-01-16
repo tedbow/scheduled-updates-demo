@@ -1,0 +1,17 @@
+uuid: cb3b51bb-ff3d-40c8-a300-c94a3c1258d9
+langcode: en
+status: true
+dependencies: {  }
+id: publish_off
+label: 'Publish Off'
+update_entity_type: node
+update_types_supported:
+  - embedded
+field_map:
+  field_status_2: status
+update_runner:
+  id: default_embedded
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: BUNDLE_DEFAULT
+  update_user: USER_UPDATE_RUNNER

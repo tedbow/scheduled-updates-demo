@@ -1,0 +1,22 @@
+uuid: 8b28a95e-9485-48c2-b409-9ee7b59f8e5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.scheduled_update.field_roles
+    - scheduled_updates.scheduled_update_type.user_role_assigner
+id: scheduled_update.user_role_assigner.field_roles
+field_name: field_roles
+entity_type: scheduled_update
+bundle: user_role_assigner
+label: Roles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings:
+    target_bundles: null
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: 0c5dca1b-a46c-40c8-9700-cbb14b918877
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.mod_publish_on
+    - node.type.moderated_content_on_off
+    - scheduled_updates.scheduled_update_type.moderation_publish_on
+id: node.moderated_content_on_off.mod_publish_on
+field_name: mod_publish_on
+entity_type: node
+bundle: moderated_content_on_off
+label: 'Publish Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      - moderation_publish_on
+  handler: 'default:scheduled_update'
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: a93617ad-f419-4bba-8700-e5c950fb4d9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.moderated_content_on_off.body
+    - node.type.moderated_content_on_off
+  module:
+    - text
+    - user
+id: node.moderated_content_on_off.default
+targetEntityType: node
+bundle: moderated_content_on_off
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

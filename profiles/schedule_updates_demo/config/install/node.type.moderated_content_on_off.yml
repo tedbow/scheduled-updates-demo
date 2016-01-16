@@ -1,0 +1,27 @@
+uuid: 7f2fb744-2513-46ba-8c00-0f4a9970ec9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - archived
+      - draft
+      - needs_review
+      - published
+    default_moderation_state: draft
+name: 'Moderated Content On/off'
+type: moderated_content_on_off
+description: 'Content the demonstrate scheduling Publish on / Publish Off '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

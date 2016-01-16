@@ -1,0 +1,24 @@
+uuid: 2d906ede-69d6-4eab-9300-f50f1e60428c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.sticky.field_sticky
+    - scheduled_updates.scheduled_update_type.sticky
+id: scheduled_update.sticky.default
+targetEntityType: scheduled_update
+bundle: sticky
+mode: default
+content:
+  field_sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  update_timestamp:
+    type: datetime_timestamp
+    weight: -9
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

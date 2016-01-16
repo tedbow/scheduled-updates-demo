@@ -1,0 +1,22 @@
+uuid: 87b1358a-4870-4d94-9600-a2cd2c584fe2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.content_publish_on_off
+  module:
+    - text
+id: node.content_publish_on_off.body
+field_name: body
+entity_type: node
+bundle: content_publish_on_off
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,13 @@
+uuid: 85dc2b34-de58-4369-9800-a8d262eea84b
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+    - workbench_moderation.moderation_state.published
+_core:
+  default_config_hash: KEtKMqDD74wvUYI0l8bkJm9YB51C20SVqLJ9N5bmgHY
+id: published_draft
+label: 'Published » Draft'
+stateFrom: published
+stateTo: draft

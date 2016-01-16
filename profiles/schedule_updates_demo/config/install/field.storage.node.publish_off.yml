@@ -1,0 +1,20 @@
+uuid: 986183b8-3376-4e93-a804-4d751e12159d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - scheduled_updates
+id: node.publish_off
+field_name: publish_off
+entity_type: node
+type: entity_reference
+settings:
+  target_type: scheduled_update
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

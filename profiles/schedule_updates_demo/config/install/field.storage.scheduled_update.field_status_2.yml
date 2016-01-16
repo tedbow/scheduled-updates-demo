@@ -1,0 +1,18 @@
+uuid: 102d50fc-affe-46d3-8e00-b605c66fae8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduled_updates
+id: scheduled_update.field_status_2
+field_name: field_status_2
+entity_type: scheduled_update
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

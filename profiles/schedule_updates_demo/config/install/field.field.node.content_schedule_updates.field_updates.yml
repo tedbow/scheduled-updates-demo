@@ -1,0 +1,32 @@
+uuid: 74295ebb-f90f-40ea-8d31-4917cb03c283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_updates
+    - node.type.content_schedule_updates
+    - scheduled_updates.scheduled_update_type.promoted
+    - scheduled_updates.scheduled_update_type.publish_on_off
+    - scheduled_updates.scheduled_update_type.sticky
+    - scheduled_updates.scheduled_update_type.title
+id: node.content_schedule_updates.field_updates
+field_name: field_updates
+entity_type: node
+bundle: content_schedule_updates
+label: Updates
+description: 'You can scheduled various updates to this content'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:scheduled_update'
+  handler_settings:
+    target_bundles:
+      publish_on_off: publish_on_off
+      0: promoted
+      1: sticky
+      2: title
+    sort:
+      field: _none
+field_type: entity_reference

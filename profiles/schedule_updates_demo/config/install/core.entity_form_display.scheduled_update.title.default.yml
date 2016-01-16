@@ -1,0 +1,25 @@
+uuid: 2d2b7290-3b12-44bd-8800-b7ab54f453bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.title.field_title
+    - scheduled_updates.scheduled_update_type.title
+id: scheduled_update.title.default
+targetEntityType: scheduled_update
+bundle: title
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  update_timestamp:
+    type: datetime_timestamp
+    weight: -9
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

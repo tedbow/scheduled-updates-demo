@@ -1,0 +1,19 @@
+uuid: e07b2190-1c9b-4f98-aa4f-792bd1ea0a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.moderation_archive.field_moderation_state_2
+    - scheduled_updates.scheduled_update_type.moderation_archive
+id: scheduled_update.moderation_archive.default
+targetEntityType: scheduled_update
+bundle: moderation_archive
+mode: default
+content:
+  update_timestamp:
+    type: datetime_timestamp
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_moderation_state_2: true

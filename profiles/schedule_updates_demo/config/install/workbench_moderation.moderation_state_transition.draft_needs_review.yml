@@ -1,0 +1,13 @@
+uuid: 607a9a66-9804-4233-a800-bda0697e9a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.draft
+    - workbench_moderation.moderation_state.needs_review
+_core:
+  default_config_hash: d59ZkABCcy-5nlXhiCxfyro4Mu6Res60Vz3xJya_YGA
+id: draft_needs_review
+label: 'Draft » Needs review'
+stateFrom: draft
+stateTo: needs_review

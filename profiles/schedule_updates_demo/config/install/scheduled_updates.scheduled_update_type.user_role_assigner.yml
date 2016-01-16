@@ -1,0 +1,16 @@
+uuid: 9c26c114-8e19-423f-9a62-98ae6eb38df0
+langcode: en
+status: true
+dependencies: {  }
+id: user_role_assigner
+label: 'User Role Assigner'
+update_entity_type: user
+update_types_supported:
+  - independent
+field_map:
+  field_roles: roles
+update_runner:
+  id: default_independent
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  update_user: USER_UPDATE_RUNNER

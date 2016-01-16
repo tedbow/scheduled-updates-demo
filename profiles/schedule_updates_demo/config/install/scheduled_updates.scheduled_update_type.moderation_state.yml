@@ -1,0 +1,17 @@
+uuid: 9190a444-39d9-48e0-9434-526aebe5f0de
+langcode: en
+status: true
+dependencies: {  }
+id: moderation_state
+label: 'Moderation State'
+update_entity_type: node
+update_types_supported:
+  - embedded
+field_map:
+  field_moderation_state: moderation_state
+update_runner:
+  id: latest_revision
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: 'YES'
+  update_user: USER_REVISION_OWNER

@@ -1,0 +1,24 @@
+uuid: 92d7c949-939b-4d9f-aa00-c92bd66fe0cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.content_publish_on_off.body
+    - node.type.content_publish_on_off
+  module:
+    - text
+    - user
+id: node.content_publish_on_off.default
+targetEntityType: node
+bundle: content_publish_on_off
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

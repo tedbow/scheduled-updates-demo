@@ -1,0 +1,24 @@
+uuid: cec9a9ed-e6c2-4eb5-bb3a-589d89d45248
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.promoted.field_promote
+    - scheduled_updates.scheduled_update_type.promoted
+id: scheduled_update.promoted.default
+targetEntityType: scheduled_update
+bundle: promoted
+mode: default
+content:
+  field_promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  update_timestamp:
+    type: datetime_timestamp
+    weight: -9
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

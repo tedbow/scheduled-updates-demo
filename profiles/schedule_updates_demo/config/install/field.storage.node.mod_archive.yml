@@ -1,0 +1,20 @@
+uuid: 4a4fa2e2-2493-440d-b051-815570f2b8bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - scheduled_updates
+id: node.mod_archive
+field_name: mod_archive
+entity_type: node
+type: entity_reference
+settings:
+  target_type: scheduled_update
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

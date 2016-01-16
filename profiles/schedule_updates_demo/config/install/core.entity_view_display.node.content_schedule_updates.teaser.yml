@@ -1,0 +1,26 @@
+uuid: 1c4fdde1-d97b-4293-890a-10e98ff1f82e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.content_schedule_updates.body
+    - node.type.content_schedule_updates
+  module:
+    - text
+    - user
+id: node.content_schedule_updates.teaser
+targetEntityType: node
+bundle: content_schedule_updates
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

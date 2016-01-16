@@ -1,0 +1,22 @@
+uuid: ff0cdc33-510b-4e0c-b741-65a15a0623b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.moderated_content_on_off
+  module:
+    - text
+id: node.moderated_content_on_off.body
+field_name: body
+entity_type: node
+bundle: moderated_content_on_off
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+uuid: 89157136-c20c-4774-8305-5fd8d5ed63a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduled_updates
+    - user
+id: scheduled_update.field_roles
+field_name: field_roles
+entity_type: scheduled_update
+type: entity_reference
+settings:
+  target_type: user_role
+module: core
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

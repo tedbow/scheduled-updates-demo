@@ -1,0 +1,18 @@
+uuid: 45772c35-ea1f-435c-a530-480e064cadc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduled_updates
+id: scheduled_update.field_promote
+field_name: field_promote
+entity_type: scheduled_update
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

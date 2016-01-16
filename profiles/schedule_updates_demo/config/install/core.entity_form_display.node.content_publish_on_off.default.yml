@@ -1,0 +1,86 @@
+uuid: 71a7ccbd-295c-4d07-ad00-af070426a5b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.content_publish_on_off.body
+    - field.field.node.content_publish_on_off.publish_date
+    - field.field.node.content_publish_on_off.publish_off
+    - node.type.content_publish_on_off
+  module:
+    - inline_entity_form
+    - path
+    - text
+id: node.content_publish_on_off.default
+targetEntityType: node
+bundle: content_publish_on_off
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    third_party_settings: {  }
+  publish_date:
+    type: inline_entity_form_complex
+    weight: 3
+    settings:
+      override_labels: true
+      label_singular: 'Publish Date'
+      label_plural: 'Publish Dates'
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings: {  }
+  publish_off:
+    type: inline_entity_form_complex
+    weight: 4
+    settings:
+      override_labels: true
+      label_singular: 'UnPublish Date'
+      label_plural: 'UnPublish Dates'
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

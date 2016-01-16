@@ -1,0 +1,17 @@
+uuid: 3fea0e89-fb3d-4a44-9703-03dfd875830b
+langcode: en
+status: true
+dependencies: {  }
+id: moderation_archive
+label: 'Moderation Archive'
+update_entity_type: node
+update_types_supported:
+  - embedded
+field_map:
+  field_moderation_state_2: moderation_state
+update_runner:
+  id: latest_revision
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: 'YES'
+  update_user: USER_REVISION_OWNER

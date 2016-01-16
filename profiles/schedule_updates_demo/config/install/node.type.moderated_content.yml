@@ -1,0 +1,27 @@
+uuid: 9bbbccf8-d523-4e23-9600-d6c70e66a356
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - archived
+      - draft
+      - needs_review
+      - published
+    default_moderation_state: draft
+name: 'Moderated Content'
+type: moderated_content
+description: 'Content to demonstrate moderating content by scheduling moderation states.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

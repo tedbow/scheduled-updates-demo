@@ -1,0 +1,21 @@
+uuid: 2513686a-facc-46d1-8554-849726762bc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.scheduled_update.field_promote_1
+    - scheduled_updates.scheduled_update_type.bulk_node_promoter
+id: scheduled_update.bulk_node_promoter.field_promote_1
+field_name: field_promote_1
+entity_type: scheduled_update
+bundle: bulk_node_promoter
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

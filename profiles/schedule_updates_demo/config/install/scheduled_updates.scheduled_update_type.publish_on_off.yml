@@ -1,0 +1,17 @@
+uuid: 31663a61-d69e-4fd5-b607-7e3b61152178
+langcode: en
+status: true
+dependencies: {  }
+id: publish_on_off
+label: 'Publish On/Off'
+update_entity_type: node
+update_types_supported:
+  - embedded
+field_map:
+  field_status: status
+update_runner:
+  id: default_embedded
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: BUNDLE_DEFAULT
+  update_user: USER_UPDATE_RUNNER

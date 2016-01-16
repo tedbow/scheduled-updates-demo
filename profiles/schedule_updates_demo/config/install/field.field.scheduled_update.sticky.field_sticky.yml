@@ -1,0 +1,21 @@
+uuid: 2f456718-e4f7-48df-8a5d-93e3ac2a36ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.scheduled_update.field_sticky
+    - scheduled_updates.scheduled_update_type.sticky
+id: scheduled_update.sticky.field_sticky
+field_name: field_sticky
+entity_type: scheduled_update
+bundle: sticky
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

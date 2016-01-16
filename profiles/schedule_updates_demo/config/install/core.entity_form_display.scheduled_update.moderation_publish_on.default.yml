@@ -1,0 +1,19 @@
+uuid: f32d6635-f764-41a3-9d04-4ead84ada445
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.moderation_publish_on.field_moderation_state_1
+    - scheduled_updates.scheduled_update_type.moderation_publish_on
+id: scheduled_update.moderation_publish_on.default
+targetEntityType: scheduled_update
+bundle: moderation_publish_on
+mode: default
+content:
+  update_timestamp:
+    type: datetime_timestamp
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_moderation_state_1: true

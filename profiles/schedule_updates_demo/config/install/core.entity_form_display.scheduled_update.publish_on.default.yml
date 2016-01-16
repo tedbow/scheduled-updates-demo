@@ -1,0 +1,19 @@
+uuid: f313baa9-c5aa-477e-9700-f4d52270fe08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.scheduled_update.publish_on.field_status_1
+    - scheduled_updates.scheduled_update_type.publish_on
+id: scheduled_update.publish_on.default
+targetEntityType: scheduled_update
+bundle: publish_on
+mode: default
+content:
+  update_timestamp:
+    type: datetime_timestamp
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_status_1: true

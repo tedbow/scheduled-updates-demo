@@ -1,0 +1,22 @@
+uuid: eefad427-86e9-4f54-ba06-6b8a85137dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.content_schedule_updates
+  module:
+    - text
+id: node.content_schedule_updates.body
+field_name: body
+entity_type: node
+bundle: content_schedule_updates
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

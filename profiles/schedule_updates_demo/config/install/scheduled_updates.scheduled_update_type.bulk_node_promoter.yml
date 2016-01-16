@@ -1,0 +1,17 @@
+uuid: d73c4f53-2146-4c93-8400-ac05b8e40bb2
+langcode: en
+status: true
+dependencies: {  }
+id: bulk_node_promoter
+label: 'Bulk Node Promoter'
+update_entity_type: node
+update_types_supported:
+  - independent
+field_map:
+  field_promote_1: promote
+update_runner:
+  id: default_independent
+  after_run: DELETE
+  invalid_update_behavior: DELETE
+  create_revisions: BUNDLE_DEFAULT
+  update_user: USER_UPDATE_RUNNER
